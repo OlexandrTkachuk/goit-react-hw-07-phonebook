@@ -33,24 +33,29 @@ export const App = () => {
       {isLoading && (
         <div
           style={{
-            display: 'flex',
+            // display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             marginTop: 20,
+            position: 'fixed',
+            top: 100,
+            right: 130,
+            gap: 20,
           }}
         >
           <Circles
-            height="40"
-            width="40"
-            color="#4fa94d"
+            height="80"
+            width="80"
+            color="#20B2AA"
             ariaLabel="circles-loading"
             wrapperStyle={{
               display: 'block',
-              margin: '0 auto ',
+              margin: '0 auto 20px',
             }}
             wrapperClass=""
             visible={true}
           />
+          <span>Loading...</span>
         </div>
       )}
 
